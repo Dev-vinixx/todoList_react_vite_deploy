@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*:focus{
+ outline: none;
+}
+body{
+ background: #222435;
+ font-family: 'Roboto', sans-serif ;
+}
+h1{
+ font-weight: 900;
+ color: #7d83b9;
+ text-align: center;
+}
+form{
+ display: flex;
+ position: relative;
+ width: 600px;
+ height: 60px;
+ margin-bottom: 60px;
+ margin: 30px auto;
+ 
+}
+input{
+ display: flex;
+ width: 100%;
+ height: 60px;
+ background: #2d3046;
+ border: none;
+ padding-left: 30px;
+ color: white;
+ font-size: 16px;
+ border-radius: 6px;
+}
+button.add{
+position: absolute;
+top: 0;
+right: 0;
+background: #363b65;
+border: none;
+color: white;
+cursor: pointer;
+padding: 10px 25px;
+height: 62px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+transition: 0.2s;
+}
+button.add:hover{
+ background: #363f88;
+}
+.taskList{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 600px;
+  margin: auto;
+ }
+.item {
+ display: flex;
+ justify-content: space-between;
+ border: 1px solid #363b65;
+ margin-bottom: 10px;
+ cursor: pointer;
+}
+.item:hover{
+ background: #151627;
+}
+.item span{
+ width: 100%;
+ color: white;
+ margin-right: 10px;
+ padding: 10px 15px;
+}
+.item.completed {
+ display: flex;
+ justify-content: space-between;
+ background: #1e1f2e;
+ border: none;
+ margin-bottom: 10px;
+ cursor: pointer;
+ opacity: 0.4;
+}
+.item.completed span{
+ width: 100%;
+ color: #4d506e;
+ margin-right: 10px;
+ padding: 11px 16px;
+ text-decoration: line-through;
+}
+button.delete{
+ background: none;
+ border: none;
+ color: #4d506e;
+ padding: 15px;
+ cursor: pointer;
+ transition: 0.2s;
+}
+button.delete:hover{
+ background: #ff004c;
+ color: white;
+ padding: 15px;
+ cursor: pointer;
+}
+.deleteAll{
+ width: 100%;
+ border: 1px solid #ff004c;
+ background: none;
+ padding: 15px;
+ color: #ff004c;
+ cursor: pointer;
+ font-weight: bold;
+ border-radius: 5px;
+ transition: 0.2s;
+ margin-top: 20px;
+}
+.deleteAll:hover{
+ color: white;
+ background: #ff004c;
+}
+.iconPng{
+ width: 100%;
+ height: 60vh;
+}
+@media screen and (max-width: 900px){
+ form{
+  width: 100%;
+ }
+ .taskList{
+  width: 100%;
+ }
+}
